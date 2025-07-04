@@ -18,3 +18,31 @@
     grid-template-columns: min(50vw,73vh) 1fr;
   }
 }
+
+.variant-option--buttons {
+  gap: 10px;
+}
+
+.variant-option__button-label {
+  flex: 0 0 30px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  min-height: 30px;
+}
+
+.variant-option__button-label__text {
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.variant-option__button-label:has([data-option-available="false"]):hover {
+  color: var(--color-variant-hover-text);
+}
+
+.variant-option__button-label--has-swatch:has(:checked) {
+  outline-width: 1px;
+  outline-offset: 1px;
+  transform: scale(0.9);
+}
