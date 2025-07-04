@@ -463,9 +463,7 @@
           ]
         }
       },
-      "custom_css": [
-        "@media (min-width: 992px) {.product-information__media {max-width: 73vh; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
