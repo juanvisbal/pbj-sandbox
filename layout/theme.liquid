@@ -32,6 +32,8 @@
       {%- render 'theme-editor' -%}
     {% endif %}
 
+    {{ 'custom.css' | stylesheet_tag }}
+
     {{ content_for_header }}
   </head>
 

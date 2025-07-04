@@ -48,14 +48,23 @@
     <div
       class="
         spacing-style
+        {% unless grid %}
         layout-panel-flex
         layout-panel-flex--{{ section.settings.content_direction }}
+        {% else %}
+        layout-panel-grid
+        gap-style
+        {% endunless %}
         section-content-wrapper
         {% if section.settings.vertical_on_mobile %} mobile-column{% endif %}
       "
       style="
         {% render 'layout-panel-style', settings: section.settings %}
         {% render 'spacing-style', settings: section.settings %}
+        {% if grid %}
+          --grid-columns: {{ section.settings.grid_columns | default: '1' }};
+          --grid-columns-desktop: {{ section.settings.grid_columns_desktop | default: '1' }};
+        {% endif %}
       "
       data-testid="section-content"
     >
