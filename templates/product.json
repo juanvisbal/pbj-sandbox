@@ -1085,6 +1085,32 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "text_NxFCrK": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>100% natural pigments &/or mordants to dye fibers and garments</strong></p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "text_94A8g8": {
                   "type": "text",
                   "name": "t:names.text",
@@ -1113,6 +1139,7 @@
                 }
               },
               "block_order": [
+                "text_NxFCrK",
                 "text_94A8g8"
               ]
             }
