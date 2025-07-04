@@ -32,9 +32,9 @@
       {%- render 'theme-editor' -%}
     {% endif %}
 
-    {{ 'custom.css' | stylesheet_tag }}
-
     {{ content_for_header }}
+
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
