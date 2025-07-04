@@ -17,6 +17,10 @@
   .product-information__grid:not(:has(.product-information__media:empty)).product-information--media-left {
     grid-template-columns: min(50vw,73vh) 1fr;
   }
+
+  .product-information__grid:not(:has(.product-information__media:empty)).product-information--media-left .product-details {
+    max-width: 50%;
+  }
 }
 
 .variant-option--buttons {
@@ -45,4 +49,134 @@
   outline-width: 1px;
   outline-offset: 1px;
   transform: scale(0.9);
+}
+
+/* Typography & Layout Refinements */
+.product-information__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.product-information__price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.product-information__description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Product Form Styling */
+.product-form {
+  margin-top: 2rem;
+}
+
+.product-form__buttons {
+  margin-top: 2rem;
+}
+
+.product-form__cart-submit {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.product-form__cart-submit:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Variant Selection Improvements */
+.variant-option__label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.variant-option--buttons .variant-option__button-label {
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.variant-option--buttons .variant-option__button-label:hover {
+  border-color: #000;
+}
+
+.variant-option--buttons .variant-option__button-label:has(:checked) {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Product Media Enhancements */
+.product-information__media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumb a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #000;
+}
+
+/* Product Details Spacing */
+.product-details > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Size Chart & Additional Info */
+.product-popup-modal {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.product-popup-modal__content {
+  background: #fff;
+  padding: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 749px) {
+  .product-information__title {
+    font-size: 2rem;
+  }
+  
+  .product-form__cart-submit {
+    max-width: 100%;
+  }
+  
+  .product-information__grid {
+    gap: 2rem;
+  }
 }
