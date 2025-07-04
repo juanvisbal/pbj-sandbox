@@ -498,6 +498,17 @@
     /* Make the height match the height of the model-viewer */
     height: 100vh;
   }
+
+  /* Color filtering styles */
+  .product-media-container,
+  slideshow-slide {
+    transition: opacity 0.3s ease;
+  }
+
+  .product-media-container[style*="display: none"],
+  slideshow-slide[style*="display: none"] {
+    opacity: 0;
+  }
 {% endstylesheet %}
 
 {% schema %}
