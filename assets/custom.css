@@ -60,6 +60,7 @@ variant-option__button-label--has-swatch {
 }
 
 .variant-option--buttons legend {
+  color: var(--color-foreground);
   font-weight: 700;
 }
 
