@@ -3,10 +3,8 @@
 
   assign fit_options = "slim,slightly slim,standard,slightly oversized,oversized" | split: ","
    
-  assign current_fit = product.metafields.custom.fit.value
+  assign current_fit = product.metafields.custom.fit
 -%}
-
-{{ product.metafields.custom.fit }}
 
 <div class="fit-selector">
   <div class="fit-selector-line"></div>
