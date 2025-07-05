@@ -274,10 +274,7 @@ product-price {
   display: inline-block;
   position: relative;
   padding: 0;
-}
-
-.accordion .details-content {
-  font-size: 0.75rem;
+  min-height: auto;
 }
 
 .accordion .details .details__header .svg-wrapper {
@@ -317,6 +314,9 @@ product-price {
   border-bottom: none;
 }
 
+.accordion .details-content {
+  font-size: 0.75rem;
+}
 
 /* Responsive Adjustments */
 @media screen and (max-width: 749px) {
