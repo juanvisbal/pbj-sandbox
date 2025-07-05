@@ -35,7 +35,7 @@
   min-height: 32px;
 }
 
-variant-option__button-label--has-swatch {
+.variant-option__button-label--has-swatch {
   border-width: 0;
 }
 
@@ -60,11 +60,11 @@ variant-option__button-label--has-swatch {
 }
 
 .variant-option--buttons legend {
-  color: var(--color-foreground);
   font-weight: 700;
 }
 
 .variant-option__swatch-value {
+  color: var(--color-foreground);
   padding-inline-start: 0;
 }
 
