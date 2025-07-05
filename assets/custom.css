@@ -334,6 +334,12 @@ accordion-custom ~ accordion-custom {
   margin-top: 18px;
 }
 
+@container style(--border-width: 0) or style(--border-style: none) {
+    .accordion--dividers:not([class*=color-]) accordion-custom:first-child .details {
+      border-block-start: 0;
+    }
+}
+
 /* Responsive Adjustments */
 @media screen and (max-width: 749px) {
   .product-information__title {
