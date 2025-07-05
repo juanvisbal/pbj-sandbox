@@ -283,7 +283,7 @@ product-price {
   top: 50%;
   width: 0.75rem;
   height: 0.75rem;
-  tranform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 55%;
 }
 
