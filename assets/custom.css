@@ -324,12 +324,6 @@ product-price {
   border-bottom: none;
 }
 
-.accordion .details-content {
-  font-size: 0.875rem;
-  padding-block-start: 15px;
-  padding-inline-start: 21px;
-}
-
 accordion-custom ~ accordion-custom {
   margin-top: 18px;
 }
