@@ -276,6 +276,10 @@ product-price {
   padding: 0;
 }
 
+.accordion .details-content {
+  font-size: 0.75rem;
+}
+
 .accordion .details .details__header .svg-wrapper {
   position: absolute;
   left: -1em;
