@@ -59,6 +59,14 @@ variant-option__button-label--has-swatch {
   max-width: 440px;
 }
 
+.variant-option--buttons legend {
+  font-weight: 700;
+}
+
+.variant-option__swatch-value {
+  padding-inline-start: 0;
+}
+
 /* Typography & Layout Refinements */
 .product-information__title {
   font-size: 2.4rem;
