@@ -288,9 +288,9 @@
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
-                        "padding-block-start": 0,
+                        "padding-block-start": 15,
                         "padding-block-end": 0,
-                        "padding-inline-start": 0,
+                        "padding-inline-start": 21,
                         "padding-inline-end": 0
                       },
                       "blocks": {}
@@ -327,9 +327,9 @@
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
-                        "padding-block-start": 0,
+                        "padding-block-start": 15,
                         "padding-block-end": 0,
-                        "padding-inline-start": 0,
+                        "padding-inline-start": 21,
                         "padding-inline-end": 0
                       },
                       "blocks": {}
@@ -425,7 +425,7 @@
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "Wash & Care",
-                    "open_by_default": true,
+                    "open_by_default": false,
                     "icon": "none",
                     "width": 20
                   },

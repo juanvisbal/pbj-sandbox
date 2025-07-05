@@ -324,14 +324,18 @@ product-price {
   border-bottom: none;
 }
 
-.accordion .details-content {
-  font-size: 0.875rem;
-  padding-block-start: 15px;
-  padding-inline-start: 21px;
-}
-
 accordion-custom ~ accordion-custom {
   margin-top: 18px;
+}
+
+@container style(--border-width: 0) or style(--border-style: none) {
+  .accordion--dividers:not([class*=color-]) accordion-custom:first-child .details {
+    border-block-start: 0;
+  }
+
+  .accordion--dividers:not([class*=color-]) accordion-custom:last-child .details {
+    border-block-end: 0;
+  }
 }
 
 /* Responsive Adjustments */
