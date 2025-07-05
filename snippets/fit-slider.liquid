@@ -6,12 +6,12 @@
   <div class="fit-selector-line"></div>
 
   {% assign fit_options = "slim,slightly slim,standard,slightly oversized,oversized" | split: "," %}
-  {% assign current_fit = product.metafields.custom.fit | downcase %}
+  {% assign current_fit = product.metafields.custom.fit.value %}
 
   {% for option in fit_options %}
     <div class="fit-selector-item">
-      <div class="fit-selector-point {% if option == current_fit %}active{% endif %}"></div>
-      {%  current_fit != 2 or current_fit != 4 %}<div class="fit-selector-label">{{ option }}</div>
+      <div class="fit-selector-point {% if forloop.size == current_fit %}active{% endif %}"></div>
+      {% if current_fit != 2 and current_fit != 4 %}<div class="fit-selector-label">{{ option }}</div>{% endif %}
     </div>
   {% endfor %}
 </div>
@@ -20,7 +20,7 @@
   .fit-selector {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-width: 330px;
     margin: 20px 0;
     position: relative;
@@ -28,11 +28,11 @@
 
   .fit-selector-line {
     position: absolute;
-    top: 50%;
+    top: 7px;
     left: 0;
     right: 0;
     height: 2px;
-    background-color: #1e2b6e;
+    background-color: var(--color-primary);
     transform: translateY(-50%);
     z-index: 0;
   }
@@ -41,27 +41,32 @@
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    background-color: #1e2b6e;
+    background-color: var(--color-primary);
     position: relative;
     z-index: 1;
   }
 
   .fit-selector-point.active {
     background-color: white;
-    border: 2px solid #1e2b6e;
   }
 
   .fit-selector-label {
     text-align: center;
-    color: #1e2b6e;
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: 12px;
+    margin-top: 4px;
   }
 
   .fit-selector-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+  }
+
+  .fit-selector-item:nth-child(2) .fit-selector-label {
+    left: 0;
+  }
+
+  .fit-selector-item:last-child .fit-selector-label {
+    right: 0;
   }
 {% endstylesheet %}
