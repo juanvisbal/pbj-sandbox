@@ -1,6 +1,8 @@
 # pbj-sandbox
 Sample store for PB+J
 
+Store: pbj-sandbox.myshopify.com
+Store password: udifli
 
 ## Recent Changes
 - Added new product fit slider component
@@ -8,7 +10,22 @@ Sample store for PB+J
 - Improved base and custom CSS for layout and style
 - Enhanced product media and details blocks
 
-## Theme
+## Technical details
+From a technical leadership perspective, the recent work focused on refining the product media experience to ensure that only images relevant to the selected color variant are displayed. This was achieved by filtering the product media collection based on the alt text, which is matched to the active color option. The logic is modular and maintainable, with clear in-code documentation to support future enhancements or variant-based customizations.
+
+## End user considerations
+For the end user, the expected experience is seamless: when a shopper selects a color, the gallery instantly updates to show only the images for that color, reducing confusion and making the product selection process more intuitive and visually relevant.
+
+## Accessibility (a11y) recommendations
+
+- Ensure all product images have descriptive alt text, especially since filtering relies on this attribute.
+- Maintain keyboard navigability and focus management within the media gallery.
+- Choose a color palette that meets WCGA requirements.
+- Use ARIA roles and labels where appropriate to support assistive technologies.
+- Always use a responsive image snippet so we can leverage the Shopify CDN to generate responsive `img` tags.
+- Use native elements whenever possible. New ones like dialog for modals and details for accordions provide basic accessibility enhancements out of the box, then adding ARIA and JS enhancements where needed.
+
+## Shopify Theme Development
 
 There are a number of really useful tools that the Shopify Themes team uses during development. Horizon is already set up to work with these tools.
 
@@ -18,30 +35,6 @@ There are a number of really useful tools that the Shopify Themes team uses duri
 
 You can follow this [quick start guide for theme developers](https://shopify.dev/docs/themes/tools/cli) to get started.
 
-### Theme Check
-
-We recommend using [Theme Check](https://github.com/shopify/theme-check) as a way to validate and lint your Shopify themes.
-
-We've added Theme Check to Horizon's [list of VS Code extensions](/.vscode/extensions.json) so if you're using Visual Studio Code as your code editor of choice, you'll be prompted to install the [Theme Check VS Code](https://marketplace.visualstudio.com/items?itemName=Shopify.theme-check-vscode) extension upon opening VS Code after you've forked and cloned Horizon.
-
-You can also run it from a terminal with the following Shopify CLI command:
-
-```bash
-shopify theme check
-```
-
-### Continuous Integration
-
-Horizon uses [GitHub Actions](https://github.com/features/actions) to maintain the quality of the theme. [This is a starting point](https://github.com/Shopify/Horizon/blob/main/.github/workflows/ci.yml) and what we suggest to use in order to ensure you're building better themes. Feel free to build off of it!
-
-#### Shopify/lighthouse-ci-action
-
-We love fast websites! Which is why we created [Shopify/lighthouse-ci-action](https://github.com/Shopify/lighthouse-ci-action). This runs a series of [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) audits for the home, product and collections pages on a store to ensure code that gets added doesn't degrade storefront performance over time.
-
-#### Shopify/theme-check-action
-
-Horizon runs [Theme Check](#Theme-Check) on every commit via [Shopify/theme-check-action](https://github.com/Shopify/theme-check-action).
-
 ## Contributing
 
 Want to make commerce better for everyone by contributing to Horizon? We'd love your help! Please read our [contributing guide](https://github.com/Shopify/Horizon/blob/main/.github/CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build for Horizon.
@@ -49,9 +42,3 @@ Want to make commerce better for everyone by contributing to Horizon? We'd love 
 ## Code of conduct
 
 All developers who wish to contribute through code or issues, please first read our [Code of Conduct](https://github.com/Shopify/Horizon/blob/main/.github/CODE_OF_CONDUCT.md).
-
-## Theme Store submission
-
-The [Shopify Theme Store](https://themes.shopify.com/) is the place where Shopify merchants find the themes that they'll use to showcase and support their business. As a theme partner, you can create themes for the Shopify Theme Store and reach an international audience of an ever-growing number of entrepreneurs.
-
-Ensure that you follow the list of [theme store requirements](https://shopify.dev/themes/store/requirements) if you're interested in becoming a [Shopify Theme Partner](https://themes.shopify.com/services/themes/guidelines) and building themes for the Shopify platform.
