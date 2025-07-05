@@ -1,0 +1,17 @@
+{% # import schema from '../schemas/blocks/_product-card.js' %}
+
+{% liquid
+  assign product = closest.product
+-%}
+
+{% render 'fit-slider', product: product %}
+
+{% schema %}
+{
+  "name": "t:names.product_fit",
+  "tag": null,
+  "settings": [
+
+  ]
+}
+{% endschema %}
