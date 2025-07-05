@@ -1,12 +1,15 @@
 {% liquid
   assign product = product | default: closest.product
+
+  assign fit_options = "slim,slightly slim,standard,slightly oversized,oversized" | split: ","
+   
+  assign current_fit = product.metafields.custom.fit.value
 -%}
+
+{{ current_fit }}
 
 <div class="fit-selector">
   <div class="fit-selector-line"></div>
-
-  {% assign fit_options = "slim,slightly slim,standard,slightly oversized,oversized" | split: "," %}
-  {% assign current_fit = product.metafields.custom.fit.value %}
 
   {% for option in fit_options %}
     <div class="fit-selector-item">
