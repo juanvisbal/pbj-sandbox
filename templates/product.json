@@ -336,7 +336,7 @@
               "type": "custom-liquid",
               "name": "t:names.custom_liquid",
               "settings": {
-                "custom_liquid": ""
+                "custom_liquid": "{% render 'fit-slider' %}"
               },
               "blocks": {}
             },
