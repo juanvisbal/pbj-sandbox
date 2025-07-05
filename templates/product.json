@@ -332,6 +332,14 @@
               },
               "blocks": {}
             },
+            "custom_liquid_A79fAJ": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": ""
+              },
+              "blocks": {}
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -647,6 +655,7 @@
             "group_HjW3Th",
             "accordion_mKh6kp",
             "variant_picker_R3rGDr",
+            "custom_liquid_A79fAJ",
             "buy_buttons_eYQEYi",
             "accordion_PenxBC",
             "group_JbmQwr"
