@@ -11,8 +11,8 @@
 
   {% for option in fit_options %}
     <div class="fit-selector-item">
-      <div class="fit-selector-point {% if forloop.size == current_fit %}active{% endif %}"></div>
-      {% if current_fit != 2 and current_fit != 4 %}<div class="fit-selector-label">{{ option }}</div>{% endif %}
+      <div class="fit-selector-point {% if forloop.index == current_fit %}active{% endif %}"></div>
+      {% if forloop.index != 2 and forloop.index != 4 %}<div class="fit-selector-label">{{ option }}</div>{% endif %}
     </div>
   {% endfor %}
 </div>
