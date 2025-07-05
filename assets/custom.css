@@ -335,9 +335,13 @@ accordion-custom ~ accordion-custom {
 }
 
 @container style(--border-width: 0) or style(--border-style: none) {
-    .accordion--dividers:not([class*=color-]) accordion-custom:first-child .details {
-      border-block-start: 0;
-    }
+  .accordion--dividers:not([class*=color-]) accordion-custom:first-child .details {
+    border-block-start: 0;
+  }
+
+  .accordion--dividers:not([class*=color-]) accordion-custom:last-child .details {
+    border-block-end: 0;
+  }
 }
 
 /* Responsive Adjustments */
