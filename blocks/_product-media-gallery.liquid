@@ -97,6 +97,11 @@
   else
     assign sorted_media = selected_product.media
   endif
+
+  # Only show media matching the selected color option (by alt text)
+  assign selected_color = selected_product.selected_or_first_available_variant.option1
+  assign sorted_media = sorted_media | where: 'alt', selected_color
+
   assign has_image_drop = sorted_media | has: 'media_type', 'image'
 -%}
 {%- if has_image_drop -%}
