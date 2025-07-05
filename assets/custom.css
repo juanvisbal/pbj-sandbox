@@ -316,6 +316,8 @@ product-price {
 
 .accordion .details-content {
   font-size: 0.75rem;
+  padding-block-start: 15px;
+  padding-inline-start: 21px;
 }
 
 /* Responsive Adjustments */
