@@ -269,10 +269,11 @@ product-price {
   color: var(--color-foreground);
 }
 
-.accordion .details .details__header,
-.accordion .details .details__header span:first-child {
+.accordion .details__header,
+.accordion .details__header span:first-child {
   display: inline-block;
   position: relative;
+  padding: 0;
 }
 
 .accordion .details .details__header .svg-wrapper {
