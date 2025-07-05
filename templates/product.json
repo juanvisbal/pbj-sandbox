@@ -1281,8 +1281,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 32,
-        "padding-block-end": 32
+        "padding-block-start": 15,
+        "padding-block-end": 0
       }
     },
     "section_Hbb4XB": {
@@ -1298,7 +1298,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 32,
             "width": "fill",
@@ -1308,10 +1308,9 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-2",
+            "color_scheme": "scheme-1",
             "background_media": "none",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/natural-indigo-india-craft.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -1327,11 +1326,34 @@
             "padding-inline-end": 40
           },
           "blocks": {
+            "image_jYLzqe": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/IOAN-MAP-NATURAL-DYES1.jpg",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_w7GN3C": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2><strong>The Craft</strong></h2>",
+                "text": "<p><strong>All within a perfect environment, working to bring production back to the original makers.</strong></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1359,9 +1381,9 @@
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
-                "content_direction": "column",
+                "content_direction": "row",
                 "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
+                "horizontal_alignment": "space-between",
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
@@ -1396,14 +1418,14 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>100% natural pigments &/or mordants to dye fibers and garments</strong></p>",
+                    "text": "<p>Raw Material: India</p><p>Processing: India</p><p>Cut And Sew: India</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
+                    "font_size": "0.875rem",
+                    "line_height": "tight",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -1422,14 +1444,14 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>The craft of naturally dyed textile production and pesticide-free cotton cultivation goes back thousands of years, with strong roots in the Indian subcontinent. The origins of vegetable dyeing in India can be traced to the Indus Valley around the 4th millenium B.C. Thousands of years later, the synthesis of petroleum-based dyes proliferated in the 1870’s, bringing an end to widespread use of natural processes.<br/>Shortsightedly convenient and inexpensive GMO & pesticide heavy cotton, petroleum-based dyes, and exploited garment manufacturing labor, has largely replaced the sustainable craft of milled organic cotton, colored with natural dyes, cut and sewn into finished garments with integrity. This shift has spoiled the natural world for more than a century, causing drastic consequences to garment workers and our environment.<br/>Through the Clean Clothes project, we aim to create dialogue and research for two primary goals: 1) to respect and advocate for the usage of pesticide-free, non-GMO organic cotton; and 2) if dyeing is necessary, to use only 100% natural dyes. By issuing constraints on dyeing and washing processes, not only can we assure Clean Clothes on our skin, but cleaner rivers, oceans, soil, and air for everyone.</p>",
+                    "text": "<p>Labels: India</p><p>Hang Tag: India</p><p>Packaging: India</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
+                    "font_size": "0.875rem",
+                    "line_height": "tight",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
@@ -1452,6 +1474,7 @@
             }
           },
           "block_order": [
+            "image_jYLzqe",
             "text_w7GN3C",
             "group_NfYYXt"
           ]
@@ -1479,7 +1502,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/CLEAN_CREW_STRIPES_INDIGO_-DETAIL.jpg",
+            "background_image": "shopify://shop_images/natural-indigo-india-people.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
