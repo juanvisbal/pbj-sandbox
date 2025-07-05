@@ -271,6 +271,8 @@ product-price {
 
 .accordion .details__header,
 .accordion .details__header span:first-child {
+  font-size: 1.125rem;
+  font-weight: 700;
   display: inline-block;
   position: relative;
   padding: 0;
