@@ -281,6 +281,8 @@ product-price {
   top: 50%;
   width: 0.75rem;
   height: 0.75rem;
+  tranform: translateY(-50%);
+  opacity: 55%;
 }
 
 .accordion .details .details__header span:first-child::after {
@@ -300,7 +302,7 @@ product-price {
   border-bottom: none;
 }
 
-.accordion:hover .details .details__header span:first-child
+.accordion .details .details__header:hover span:first-child,
 .accordion .details[open] .details__header span:first-child::after {
   left: 0;
   right: auto;
