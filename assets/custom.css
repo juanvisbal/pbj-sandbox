@@ -204,7 +204,6 @@ product-price {
 
 .accordion__button {
   width: 100%;
-  padding: 2rem 0;
   background: none;
   border: none;
   text-align: left;
@@ -272,21 +271,24 @@ product-price {
 
 .accordion .details .details__header,
 .accordion .details .details__header span:first-child {
+  display: inline-block;
   position: relative;
 }
 
 .accordion .details .details__header .svg-wrapper {
   position: absolute;
   left: -1em;
-  top: 0;
+  top: 50%;
   width: 0.75rem;
   height: 0.75rem;
+  opacity: 55%;
+  transform: translateY(-50%);
 }
 
 .accordion .details .details__header span:first-child::after {
-  content: "" !important;
+  content: "";
   position: absolute;
-  display: block !important;
+  display: block;
   z-index: 1;
   right: 0;
   width: 0;
@@ -294,23 +296,18 @@ product-price {
   left: auto;
   background: #243a7b;
   height: 1px;
-  -webkit-transition: width .3s cubic-bezier(.25,.1,.25,1) 0s;
   transition: width .3s cubic-bezier(.25,.1,.25,1) 0s;
-  -webkit-transform: unset;
   transform: unset;
-  -webkit-transform-origin: unset;
   transform-origin: unset;
   border-bottom: none;
 }
 
-.accordion:hover .details .details__header span:first-child
+.accordion .details .details__header:hover span:first-child,
 .accordion .details[open] .details__header span:first-child::after {
-  left: 0 !important;
+  left: 0;
   right: auto;
   width: 100%;
-  -webkit-transform: unset;
   transform: unset;
-  -webkit-transform-origin: unset;
   transform-origin: unset;
   border-bottom: none;
 }

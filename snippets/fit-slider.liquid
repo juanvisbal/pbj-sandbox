@@ -1,4 +1,7 @@
-<!-- Shopify Snippet: Fit Selector with Metafield -->
+{% liquid
+  assign product = product | default: closest.product
+-%}
+
 <div class="fit-selector">
   <div class="fit-selector-line"></div>
 
@@ -8,7 +11,7 @@
   {% for option in fit_options %}
     <div class="fit-selector-item">
       <div class="fit-selector-point {% if option == current_fit %}active{% endif %}"></div>
-      <div class="fit-selector-label">{{ option }}</div>
+      {%  current_fit != 2 or current_fit != 4 %}<div class="fit-selector-label">{{ option }}</div>
     </div>
   {% endfor %}
 </div>
@@ -18,8 +21,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 300px;
-    margin: 20px auto;
+    max-width: 330px;
+    margin: 20px 0;
     position: relative;
   }
 
