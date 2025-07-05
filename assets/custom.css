@@ -35,6 +35,10 @@
   min-height: 30px;
 }
 
+variant-option__button-label--has-swatch {
+  border-width: 0;
+}
+
 .variant-option__button-label__text {
   line-height: 28px;
   font-weight: 500;
@@ -49,6 +53,10 @@
   outline-width: 1px;
   outline-offset: 1px;
   transform: scale(0.9);
+}
+
+.buy-buttons-block {
+  max-width: 440px;
 }
 
 /* Typography & Layout Refinements */
@@ -262,11 +270,20 @@ product-price {
   color: var(--color-foreground);
 }
 
+.accordion .details .details__header,
 .accordion .details .details__header span:first-child {
   position: relative;
 }
 
-.accordion .details .details__header:first-child::after {
+.accordion .details .details__header .svg-wrapper {
+  position: absolute;
+  left: -1em;
+  top: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.accordion .details .details__header span:first-child::after {
   content: "" !important;
   position: absolute;
   display: block !important;
@@ -286,8 +303,8 @@ product-price {
   border-bottom: none;
 }
 
-.accordion:hover .details .details__header:first-child
-.accordion .details[open] .details__header:first-child::after {
+.accordion:hover .details .details__header span:first-child
+.accordion .details[open] .details__header span:first-child::after {
   left: 0 !important;
   right: auto;
   width: 100%;
